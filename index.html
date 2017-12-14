@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>JS Homework 5</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <main>
+	<h1>Sign Up For Your Monthly Subscription of a Code Monkey!</h1>
+<form id="signupForm" action="#" method="post">
+	Username: <input id="userName" type="text" onfocus="usernameParams()" onblur="clearNewNodes()"><br><br>
+	Password: <input id="pass1" type="password" onfocus="passParams()" onblur="clearNewNodes()"><br><br>
+	Repeat password: <input id="pass2" type="password" onfocus="matchPasswords()" onblur="clearNewNodes()"><br><br>
+	Subscription Terms: <select id="deals">
+		<option>Purchase 1-year subscription deal</option>
+		<option>Purchase month-to-month subscription at full price</option>
+	</select><br><br>
+	
+	<input type="checkbox" name="terms" id="terms"> Click here to indicate you agree to the terms outlined in our TOS.<br><br>
+	
+	<button id="myButton" onclick="validateForm()">Sign Up</button>
+</form>
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
